@@ -21,4 +21,4 @@ sidebar_position: '1'
 console.log("aaaaaaaaa")
 ```
 
-adandiawdi![camera.png](static/img/camera.png)
+adandiawdi
