@@ -21,4 +21,4 @@ sidebar_position: '1'
 console.log("aaaaaaaaa")
 ```
 
-adandiawdi![bell.png](assets/img/bell.png)
+adandiawdi
