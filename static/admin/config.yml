@@ -2,6 +2,7 @@ backend:
   name: github
   branch: main
   repo: nguyenquyynh/cms.doc
+  base_url: https://glittery-moxie-b98ce9.netlify.app/
 
 # These lines should *not* be indented
 media_folder: "static/img" # Media files will be stored in the repo under static/images/uploads
