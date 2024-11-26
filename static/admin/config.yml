@@ -2,7 +2,6 @@ backend:
   name: github
   branch: main
   repo: nguyenquyynh/cms.doc
-  base_url: https://precious-chaja-c27987.netlify.app/
 
 # These lines should *not* be indented
 media_folder: "static/img" # Media files will be stored in the repo under static/images/uploads
