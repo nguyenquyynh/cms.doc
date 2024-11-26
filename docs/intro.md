@@ -1,5 +1,9 @@
 ---
-sidebar_position: '1'
+sidebar_position: "1"
+label: ABC
+position: 5
+linkType: generated-index
+linkDoc: abc
 ---
 
 ```
