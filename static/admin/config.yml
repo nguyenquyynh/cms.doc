@@ -11,13 +11,13 @@ public_folder: "/img/" # The src attribute for uploaded media will begin with /i
 collections:
 - name: Docs (EN) 
   label: "Docs (EN)"
-  folder: docs/en
+  folder: docs
   extension: md
   widget: "list"
   create: true
   slug: "{{slug}}"
   nested: 
-    depth: 100
+    depth: 3
     summary: '{{title}}'
   fields:
     - { name: sidebar_position, label: Position, widget: number }
@@ -29,7 +29,7 @@ collections:
       widget: "list"
 - name: Docs (VN)
   label: "Docs (VN)"
-  folder: docs/vi
+  folder: i18n/vi/docusaurus-plugin-content-docs/current
   extension: md
   widget: "list"
   create: true
