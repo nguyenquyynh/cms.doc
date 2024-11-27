@@ -19,6 +19,7 @@ collections:
   nested: 
     depth: 100
     summary: '{{title}}'
+  summary: '{{filename}}'
   fields:
     - { name: sidebar_position, label: Position, widget: number }
     - { name: label, label: label, widget: string }
