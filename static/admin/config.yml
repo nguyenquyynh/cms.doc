@@ -12,11 +12,13 @@ collections:
 - name: Docs (EN) 
   label: "Docs (EN)"
   folder: docs/en
-  identifier_field: label
   extension: md
   widget: "list"
   create: true
   slug: "{{slug}}"
+  nested: 
+    depth: 100
+    summary: '{{title}}'
   fields:
     - { name: sidebar_position, label: Position, widget: number }
     - { name: label, label: label, widget: string }
@@ -28,11 +30,13 @@ collections:
 - name: Docs (VN)
   label: "Docs (VN)"
   folder: docs/vi
-  identifier_field: label
   extension: md
   widget: "list"
   create: true
   slug: "{{slug}}"
+  nested: 
+    depth: 100
+    summary: '{{title}}'
   fields:
     - { name: sidebar_position, label: Position, widget: number }
     - { name: label, label: label, widget: string }
