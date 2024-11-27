@@ -9,15 +9,15 @@ media_folder: "static/img" # Media files will be stored in the repo under static
 public_folder: "/img/" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
-- name: Docs (EN) 
-  label: "Docs (EN)"
+- name: Docs (Viet Nam) 
+  label: "Docs (Viet Nam)"
   folder: docs
   extension: md
   widget: "list"
   create: true
   slug: "{{slug}}"
   nested: 
-    depth: 100
+    depth: 3
     summary: '{{title}}'
   summary: '{{filename}}'
   fields:
@@ -25,62 +25,28 @@ collections:
     - { name: label, label: label, widget: string }
     - { name: title, label: File Name, widget: string }
     - { name: body, label: Body, widget: markdown }
-    - { name: slug, label: Slug, widget: string }
+    - { name: slug, label: Slug, widget: string, required: false }
     - label: "Tags"
       name: "tags"
+      required: false
       widget: "list"
-- name: Pages 
-  label: "Pages"
-  folder: pages
+- name: Docs (English)
+  label: "Docs (English)"
+  folder: i18n/en/docusaurus-plugin-content-docs/current
   extension: md
   widget: "list"
   create: true
   slug: "{{slug}}"
   nested: 
-    depth: 100
-    summary: '{{title}}'
-  summary: '{{filename}}'
+    depth: 3
+    summary: '{{filename}}'
   fields:
     - { name: sidebar_position, label: Position, widget: number }
     - { name: label, label: label, widget: string }
     - { name: title, label: File Name, widget: string }
     - { name: body, label: Body, widget: markdown }
-    - { name: slug, label: Slug, widget: string }
+    - { name: slug, label: Slug, widget: string, required: false }
     - label: "Tags"
       name: "tags"
+      required: false
       widget: "list"
-# - name: Docs (EN) - Basic 
-#   label: "Docs (EN)  - Basic"
-#   folder: docs/tutorial-basics
-#   extension: md
-#   widget: "list"
-#   create: true
-#   slug: "{{slug}}"
-#   fields:
-#     - { name: sidebar_position, label: Position, widget: number }
-#     - { name: label, label: label, widget: string }
-#     - { name: title, label: File Name, widget: string }
-#     - { name: body, label: Body, widget: markdown }
-#     - { name: slug, label: Slug, widget: string }
-#     - label: "Tags"
-#       name: "tags"
-#       widget: "list"
-# - name: Docs (VN)
-#   label: "Docs (VN)"
-#   folder: i18n/vi/docusaurus-plugin-content-docs/current
-#   extension: md
-#   widget: "list"
-#   create: true
-#   slug: "{{slug}}"
-#   nested: 
-#     depth: 100
-#     summary: '{{title}}'
-#   fields:
-#     - { name: sidebar_position, label: Position, widget: number }
-#     - { name: label, label: label, widget: string }
-#     - { name: title, label: File Name, widget: string }
-#     - { name: body, label: Body, widget: markdown }
-#     - { name: slug, label: Slug, widget: string }
-#     - label: "Tags"
-#       name: "tags"
-#       widget: "list"

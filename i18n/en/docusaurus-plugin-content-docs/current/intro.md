@@ -1,11 +1,11 @@
 ---
 sidebar_position: 1
-label: Tutorial Intro VietNam
+label: Tutorial Intro English
 slug: /intro
 tags:
   - intro
 ---
-# Tutorial Intro VietNam
+# Tutorial Intro English
 
 Let's discover **Docusaurus in less than 5 minutes**.
 
