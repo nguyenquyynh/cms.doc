@@ -29,6 +29,26 @@ collections:
     - label: "Tags"
       name: "tags"
       widget: "list"
+- name: Pages 
+  label: "Pages"
+  folder: pages
+  extension: md
+  widget: "list"
+  create: true
+  slug: "{{slug}}"
+  nested: 
+    depth: 100
+    summary: '{{title}}'
+  summary: '{{filename}}'
+  fields:
+    - { name: sidebar_position, label: Position, widget: number }
+    - { name: label, label: label, widget: string }
+    - { name: title, label: File Name, widget: string }
+    - { name: body, label: Body, widget: markdown }
+    - { name: slug, label: Slug, widget: string }
+    - label: "Tags"
+      name: "tags"
+      widget: "list"
 # - name: Docs (EN) - Basic 
 #   label: "Docs (EN)  - Basic"
 #   folder: docs/tutorial-basics
