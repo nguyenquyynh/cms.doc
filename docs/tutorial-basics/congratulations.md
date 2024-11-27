@@ -1,5 +1,9 @@
 ---
 sidebar_position: 6
+label: Congratulations!
+slug: /congratulations
+tags:
+  - congratulations
 ---
 
 # Congratulations!
